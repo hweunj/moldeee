@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:id="@+id/head_guide"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
+        android:background="@color/fragment_2_back_ground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/moldi_basic_margin"
+            android:background="@android:color/white">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/my_image"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/favorite_button" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_toRightOf="@+id/my_image"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/molde_base_text_color"
+                android:text="김모디 님"
+                />
+
+            <ImageView
+                android:id="@+id/fragment_2_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_setting_1_48" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/myReportB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="22dp"
+
+                    android:layout_gravity="center"
+                    android:src="@drawable/report_btn" />
+                
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@color/molde_base_text_color">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/myCommentB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:src="@drawable/reply_btn" />
+
+                <LinearLayout
+                    android:layout_width="1dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="22dp"
+                    android:background="@color/molde_base_text_color">
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/myScrapB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="22dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/report_btn" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/middle_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/head_guide">
+
+        <TextView
+            android:id="@+id/fragment_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/ask"
+            android:textColor="@color/molde_base_text_color"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/just_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="@color/molde_base_text_color"
+            android:layout_below="@id/fragment_ask" />
+
+        <TextView
+            android:id="@+id/login_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/just_line"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="로그인 / 로그아웃"
+            android:textColor="@color/molde_base_text_color"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

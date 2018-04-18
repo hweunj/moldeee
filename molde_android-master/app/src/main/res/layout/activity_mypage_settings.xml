@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="#f6f6f6"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.limefriends.molde.menu_mypage.settings">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/toolbarBackBtn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/toolbarbackbtn"/>
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:text="Toolbar Title"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <TextView
+        android:id="@+id/map_push"
+        android:background="@color/white"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="내위치 주변 푸시알람"/>
+
+    <ImageView
+        android:id="@+id/map_push_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/favorite_push"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/switch_off" />
+
+    <TextView
+        android:id="@+id/favorite_push"
+        android:background="@color/white"
+        android:layout_below="@+id/map_push"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="내 즐겨찾기 푸시알람"/>
+
+    <ImageView
+        android:id="@+id/favorite_push_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/map_push_btn"
+        android:layout_alignTop="@+id/favorite_push"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/switch_off" />
+
+    <TextView
+        android:id="@+id/madeBy"
+        android:background="@color/white"
+        android:layout_below="@+id/favorite_push"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="만든이"/>
+
+    <TextView
+        android:id="@+id/madeBy_Answer"
+        android:layout_below="@+id/madeBy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="14dp"
+        android:background="#f6f6f6"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:text="라임프렌즈"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/terms"
+        android:background="@color/white"
+        android:layout_below="@+id/madeBy_Answer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="이용 약관"/>
+
+    <TextView
+        android:id="@+id/terms_Answer"
+        android:layout_below="@+id/terms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="14dp"
+        android:background="#f6f6f6"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:text="이용 약관--------------"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/license"
+        android:background="@color/white"
+        android:layout_below="@+id/terms_Answer"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="1dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:gravity="center_vertical"
+        android:text="라이센스"/>
+
+    <TextView
+        android:id="@+id/license_Answer"
+        android:layout_below="@+id/license"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="17dp"
+        android:paddingVertical="14dp"
+        android:background="#f6f6f6"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:text="라이센스-----------------------"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
